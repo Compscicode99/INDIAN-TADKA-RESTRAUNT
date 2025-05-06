@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Indian Tadka</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ff7043;
+      padding: 10px 20px;
+      color: white;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .search input {
+      padding: 8px;
+      border: none;
+      border-radius: 4px;
+      width: 250px;
+    }
+
+    .welcome {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .img-grid {
+      display: flex;
+      justify-content: space-between;
+      margin: 30px 50px;
+    }
+
+    .img-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 22%;
+    }
+
+    .img-box img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .img-box h3 {
+      margin: 10px 0 5px;
+      font-size: 18px;
+    }
+
+    .img-box p {
+      margin: 0;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .btn-container {
+      text-align: center;
+      padding: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .map-contact {
+      display: flex;
+      justify-content: space-between;
+      padding: 30px;
+      background-color: #f3f3f3;
+    }
+
+    .map {
+      flex: 1;
+      min-width: 50%;
+    }
+
+    .map iframe {
+      width: 100%;
+      height: 400px;
+      border: 0;
+    }
+
+    .form {
+      flex: 1;
+      min-width: 50%;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    .form h2 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: #ff7043;
+    }
+
+    .form label {
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 10px;
+      color: #333;
+    }
+
+    .form input,
+    .form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 5px;
+      font-size: 14px;
+      border-radius: 4px;
+      border: 1px solid #ddd;
+      box-sizing: border-box;
+    }
+
+    .form input:focus,
+    .form textarea:focus {
+      border-color: #ff7043;
+      outline: none;
+    }
+
+    .form textarea {
+      resize: vertical;
+    }
+
+    .form .btn-container {
+      margin-top: 20px;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .form .btn-container button {
+      padding: 10px 20px;
+      margin-left: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      border-radius: 4px;
+      background-color: #ff7043;
+      color: white;
+    }
+
+    .testimonial {
+      background-color: #ffdca1;
+      padding: 30px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      max-width: 800px;
+      margin: 30px auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .testimonial img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .testimonial-content {
+      flex: 1;
+    }
+
+    .testimonial-name {
+      font-weight: bold;
+      margin-top: 10px;
+      text-align: end;
+    }
+
+    .stars {
+      color: #f4c150;
+      margin-top: 5px;
+      text-align: end;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="logo">Indian Tadka</div>
+    <div class="search">
+      <input type="text" placeholder="Search your favorite dish...">
+    </div>
+  </div>
+
+  <div class="welcome">
+    <h1>Welcome to Indian Tadka</h1>
+    <p>Taste the authentic cuisine that brings India to your plate.</p>
+  </div>
+
+  <div class="img-grid">
+    <div class="img-box">
+      <a href="new.html" target="_blank"><img src="img1.jpg" alt="Starters"></a>
+      <h3>Starters</h3>
+      <p>Spicy and crispy to kickstart your meal.</p>
+    </div>
+    <div class="img-box">
+      <img src="img2.png" alt="Vegetarian">
+      <h3>Vegetarian</h3>
+      <p>Healthy, fresh, and flavorful dishes.</p>
+    </div>
+    <div class="img-box">
+      <img src="img3.png" alt="Non-Vegetarian">
+      <h3>Non-Vegetarian</h3>
+      <p>Rich, bold, and delicious meat flavors.</p>
+    </div>
+    <div class="img-box">
+      <img src="img4.jpg" alt="Sweets">
+      <h3>Sweets</h3>
+      <p>Sweet delights to end your meal perfectly.</p>
+    </div>
+  </div>
+
+  <div class="btn-container">
+    <button onclick="location.href='#book'">Book A Table</button>
+    <button onclick="location.href='#order'">Order Now</button>
+  </div>
+
+  <section class="map-contact">
+    <div class="map">
+      <iframe src="https://www.google.com/maps?q=restaurant&output=embed"></iframe>
+    </div>
+    <div class="form">
+      <h2>Contact Us</h2>
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+        <label for="message">Message</label>
+        <textarea id="message" rows="4" required></textarea>
+        <div class="btn-container">
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="testimonial">
+    <img src="https://cdn2.iconfinder.com/data/icons/male-users-2/512/2-512.png" alt="Happy Customer">
+    <div class="testimonial-content">
+      <p>"Absolutely loved the food at Indian Tadka."</p>
+      <div class="testimonial-name">– Sumit & Arya</div>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

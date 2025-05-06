@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Main Page - Food Menu</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    body {
+      background-color: #f4f4f4;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #333;
+      padding: 10px 20px;
+    }
+
+    nav .logo {
+      height: 50px;
+      width: 50px;
+      object-fit: cover;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+    }
+
+    nav input[type="search"] {
+      padding: 8px;
+      width: 200px;
+    }
+
+    .hero {
+      background: url('https://www.w3schools.com/w3images/food.jpg') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 100px 0;
+    }
+
+    .hero h1 {
+      font-size: 50px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    main.grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: #fff;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .card .price {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .card .price p {
+      margin: 0;
+    }
+
+    .card .price i {
+      color: gold;
+    }
+
+    .card .btn {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .card .btn button {
+      padding: 8px 12px;
+      border: none;
+      background-color: orange;
+      color: white;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .card .btn p {
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: #ff7043;
+      text-decoration: none;
+    }
+
+    footer ul {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0;
+    }
+
+    footer ul li {
+      display: inline;
+      margin: 0 10px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <img class="logo" src="logo.png" alt="logo">
+    <input type="search" placeholder="Search...">
+  </nav>
+
+  <section id="menu">
+    <main class="grid">
+      <div class="card">
+        <img src="https://images.immediate.co.uk/production/volatile/sites/2/2024/05/GurdeepBacalhausaltCodFrittersSaffron-076-f07f1be.gif?quality=90&resize=700,466" alt="Food 1">
+        <div class="price">
+          <p>$22</p>
+          <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+        </div>
+        <div class="btn">
+          <button>Order Now</button>
+          <p>+</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://img.taste.com.au/6QVUpcfO/taste/2016/11/starters-recipes-116741-1.jpg" alt="Food 2">
+        <div class="price">
+          <p>$18</p>
+          <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+        </div>
+        <div class="btn">
+          <button>Order Now</button>
+          <p>+</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://img.taste.com.au/RhosJEon/w720-h480-cfill-q80/taste/2016/11/roasted-stuffed-mushrooms-80629-1.jpeg" alt="Food 3">
+        <div class="price">
+          <p>$25</p>
+          <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+        </div>
+        <div class="btn">
+          <button>Order Now</button>
+          <p>+</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://5.imimg.com/data5/NK/UA/GLADMIN-29857013/starter.jpg" alt="Food 4">
+        <div class="price">
+          <p>$19</p>
+          <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+        </div>
+        <div class="btn">
+          <button>Order Now</button>
+          <p>+</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlNXt-cMRsWKrnNs-u4_9MeYZuh3Wjt-Eq5g&s" alt="Food 5">
+        <div class="price">
+          <p>$30</p>
+          <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+        </div>
+        <div class="btn">
+          <button>Order Now</button>
+          <p>+</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://qul.imgix.net/63eee848-5bb8-44d0-aa7f-83cb44e0552e/673227_sld.jpg" alt="Food 6">
+        <div class="price">
+          <p>$20</p>
+          <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+        </div>
+        <div class="btn">
+          <button>Order Now</button>
+          <p>+</p>
+        </div>
+      </div>
+    </main>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Indian Tadka. All rights reserved.</p>
+    <ul>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms & Conditions</a></li>
+    </ul>
+  </footer>
+
+</body>
+</html>
